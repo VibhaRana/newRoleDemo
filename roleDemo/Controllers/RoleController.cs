@@ -9,6 +9,8 @@ using roleDemo.ViewModels;
 
 namespace roleDemo.Controllers
 {
+    [Microsoft.AspNetCore.Authorization.Authorize]
+
     public class RoleController : Controller
     {
         ApplicationDbContext _context;
