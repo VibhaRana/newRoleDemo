@@ -9,7 +9,10 @@ namespace roleDemo.ViewModels {
         [Required]
         public string Email { get; set; }
         [Required]
+        //[Required]
+        
         public string Role  { get; set; }
+       // public string UserRole { get; set; }
     }
 
 }

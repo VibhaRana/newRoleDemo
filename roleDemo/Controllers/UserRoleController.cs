@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using roleDemo.Data;
@@ -10,11 +11,12 @@ using roleDemo.ViewModels;
 
 namespace roleDemo.Controllers
 {
+    
 
     // This annotation can be used at the class or method level.
     // The annotation could include a comma separated list or different
     // roles.
-    [Microsoft.AspNetCore.Authorization.Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class UserRoleController : Controller {
         private ApplicationDbContext    _context;
         private IServiceProvider        _serviceProvider;

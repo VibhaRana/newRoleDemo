@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using roleDemo.Data;
 using roleDemo.Repositories;
@@ -9,7 +10,7 @@ using roleDemo.ViewModels;
 
 namespace roleDemo.Controllers
 {
-    [Microsoft.AspNetCore.Authorization.Authorize]
+    [Authorize]
 
     public class RoleController : Controller
     {

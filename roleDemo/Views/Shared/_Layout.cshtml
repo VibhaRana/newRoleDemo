@@ -30,6 +30,15 @@
 
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <a asp-area="" class="nav-link text-dark" asp-controller="Profile" asp-action="UpdateProfile">
+                                    Profile
+                                </a>
+                            </li>
+                        }
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -44,7 +53,8 @@
                             </a>
                         </li>
 
-                        
+
+
 
                     </ul>
                 </div>
