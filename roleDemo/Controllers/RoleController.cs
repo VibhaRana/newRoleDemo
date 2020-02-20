@@ -10,7 +10,7 @@ using roleDemo.ViewModels;
 
 namespace roleDemo.Controllers
 {
-    [Authorize]
+    //[Authorize]
 
     public class RoleController : Controller
     {
